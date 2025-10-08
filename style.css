@@ -1,5 +1,5 @@
 body {
-  background-image: url('assets/pixil-frame-0.png');
+  background-image: url('https://dl.glitter-graphics.com/pub/2730/2730267baqumpdcd2.gif');
   image-rendering: pixelated;
   background-color: #ffffff;
   background-size: 36px 36px;
@@ -14,11 +14,12 @@ body {
   max-width: 500px;
   padding: 20px;
   margin: 20px;
+  overflow-x: hidden;
 }
 
 .header-gif {
   position: absolute;     /* floats over the container */
-  top: 10%;               /* adjust vertical position */
+  top: 11%;               /* adjust vertical position */
   left: 50%;              /* center horizontally */
   transform: translateX(-50%); /* truly centers */
   image-rendering: pixelated;
@@ -33,10 +34,19 @@ body {
 
 .container {
   text-align: center;
-  background-color: #A2C3C4;
+  image-rendering: pixelated;
+  background-color: #E1E0A4;
   border-radius: 8px;
-  z-index: 1; 
+  border: 8px #ffffff solid;
+  z-index: 1;
+  position: absolute;     /* floats over the container */
+  top: 20%;               /* adjust vertical position */
+  left: 50%;              /* center horizontally */
+  transform: translateX(-50%); /* truly centers */ 
+  padding: 15px;
+  max-width: 500px;
 }
+
 .h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
@@ -63,6 +73,7 @@ body {
   background-color: #9EB69C;
   padding: 20px;
   margin: 0 50px;
+  border: 3px #E1E0A4 inset;
 }
 
 button {
@@ -75,6 +86,7 @@ button {
   border-radius: 12px;
   margin: 10px;
   cursor: pointer;
+  border: 2px #ffffff outset;
   transition: all 0.2s;
 }
 
@@ -84,8 +96,29 @@ button:hover {
 
 button.active {
   border-color: #9C91A6;
+  border: 2px #ffffff outset;
   box-shadow: 0 0 10px #9C91A6;
   background-color: #9C91A6;
 
 }
+
+.wings-gif {
+  position: absolute;
+  right: 100%; /* start completely offscreen to the left */
+  top: 15px;
+  transform: translateX(0);
+  z-index: 2;
+  animation: fly-right 8s linear infinite;
+}
+
+@keyframes fly-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(200vw); /* move smoothly to the right */
+  }
+}
+
+
 

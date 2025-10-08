@@ -18,7 +18,7 @@ const phrases = [
   "Keep your momentum going ⚡",
   "Every second counts ⏳",
   "Small steps lead to big results 🚀",
-  "Your future self will thank you 🙌"
+  "Your future self will thank you 🙏"
 ];
 
 
