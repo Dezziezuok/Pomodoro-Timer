@@ -2,7 +2,7 @@ body {
   background-image: url('https://dl.glitter-graphics.com/pub/2730/2730267baqumpdcd2.gif');
   image-rendering: pixelated;
   background-color: #ffffff;
-  background-size: 36px 36px;
+  background-size: 72px 72px;
   background-position: center;
   background-repeat: repeat;
   color: #ffffff;
@@ -15,6 +15,7 @@ body {
   padding: 20px;
   margin: 20px;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .header-gif {
