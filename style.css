@@ -11,6 +11,9 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  max-width: 500px;
+  padding: 20px;
+  margin: 20px;
 }
 
 .header-gif {
