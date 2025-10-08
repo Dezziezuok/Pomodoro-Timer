@@ -1,0 +1,88 @@
+body {
+  background-image: url('assets/pixil-frame-0.png');
+  image-rendering: pixelated;
+  background-color: #ffffff;
+  background-size: 36px 36px;
+  background-position: center;
+  background-repeat: repeat;
+  color: #ffffff;
+  font-family: 'Press Start 2P', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.header-gif {
+  position: absolute;     /* floats over the container */
+  top: 10%;               /* adjust vertical position */
+  left: 50%;              /* center horizontally */
+  transform: translateX(-50%); /* truly centers */
+  image-rendering: pixelated;
+  transition: transform 0.3s ease;
+  z-index: 2; /* sits on top of container */
+}
+
+/* Hover animation */
+.header-gif:hover {
+  transform: translateX(-50%) scale(1.1);
+}
+
+.container {
+  text-align: center;
+  background-color: #A2C3C4;
+  border-radius: 8px;
+  z-index: 1; 
+}
+.h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.h2 {
+  font-size: 1.0rem;
+  margin-bottom: 30px;
+  color: #ffffff;
+  padding: 20px;
+  margin: 0 15px;
+}
+#phrase {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+  min-height: 2rem;
+}
+
+#timer {
+  font-size: 4rem;
+  margin: 20px 0;
+  background-color: #9EB69C;
+  padding: 20px;
+  margin: 0 50px;
+}
+
+button {
+  background-color: #F2C693;
+  border: none;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  font-size: 1.2rem;
+  padding: 12px 25px;
+  border-radius: 12px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button.active {
+  border-color: #9C91A6;
+  box-shadow: 0 0 10px #9C91A6;
+  background-color: #9C91A6;
+
+}
+
