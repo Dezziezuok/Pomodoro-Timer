@@ -20,12 +20,12 @@ body {
 
 .header-gif {
   position: absolute;     /* floats over the container */
-  top: 11%;               /* adjust vertical position */
+  top: 8%;               /* adjust vertical position */
   left: 50%;              /* center horizontally */
   transform: translateX(-50%); /* truly centers */
   image-rendering: pixelated;
   transition: transform 0.3s ease;
-  z-index: 2; /* sits on top of container */
+  z-index: 1; /* sits on top of container */
 }
 
 /* Hover animation */
@@ -39,9 +39,9 @@ body {
   background-color: #E1E0A4;
   border-radius: 8px;
   border: 8px #ffffff solid;
-  z-index: 1;
+  z-index: -1;
   position: absolute;     /* floats over the container */
-  top: 20%;               /* adjust vertical position */
+  top: 15%;               /* adjust vertical position */
   left: 50%;              /* center horizontally */
   transform: translateX(-50%); /* truly centers */ 
   padding: 15px;
@@ -106,9 +106,9 @@ button.active {
 .wings-gif {
   position: absolute;
   right: 100%; /* start completely offscreen to the left */
-  top: 15px;
+  top: 5px;
   transform: translateX(0);
-  z-index: 2;
+  z-index: 10;
   animation: fly-right 8s linear infinite;
 }
 
@@ -120,6 +120,23 @@ button.active {
     transform: translateX(200vw); /* move smoothly to the right */
   }
 }
+
+
+#spotify {
+  border-radius: 12px;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  z-index: 1000;
+  text-align: center;
+  image-rendering: pixelated;
+}
+
+
 
 
 

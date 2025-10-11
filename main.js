@@ -1,5 +1,8 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
+const selectSound = new Audio('select.wav');
+const alarmSound = new Audio('alarm.wav');
+
 
 function createWindow() {
   const win = new BrowserWindow({
