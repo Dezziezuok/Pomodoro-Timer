@@ -107,5 +107,4 @@ document.addEventListener("DOMContentLoaded", () => {
     startTimer(5, 0);
   });
 
-  // 🚀 Initial setup
 });
