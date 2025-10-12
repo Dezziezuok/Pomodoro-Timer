@@ -140,7 +140,6 @@ button.active {
 
 iframe, #spotify {
   z-index: 1;
-  pointer-events: none; 
 }
 
 
