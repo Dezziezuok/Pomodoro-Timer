@@ -93,6 +93,7 @@ button {
 
 button:hover {
   opacity: 0.8;
+  cursor: pointer;
 }
 
 button.active {
@@ -109,7 +110,7 @@ button.active {
   top: 5px;
   transform: translateX(0);
   z-index: 10;
-  animation: fly-right 8s linear infinite;
+  animation: fly-right 10s linear infinite;
 }
 
 @keyframes fly-right {
@@ -126,16 +127,21 @@ button.active {
   border-radius: 12px;
   width: 100%;
   height: 100px;
-  position: absolute;
-  bottom: 0;
+  position: fixed;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  width: 400px;
+  max-width: 350px;
   z-index: 1000;
   text-align: center;
   image-rendering: pixelated;
+  border: 10px white inline;
 }
 
+iframe, #spotify {
+  z-index: 1;
+  pointer-events: none; 
+}
 
 
 

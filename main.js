@@ -1,19 +1,26 @@
-const { app, BrowserWindow } = require('electron');
-const path = require('path');
-const selectSound = new Audio('select.wav');
-const alarmSound = new Audio('alarm.wav');
-
+const { app, BrowserWindow } = require("electron");
+const path = require("path");
 
 function createWindow() {
   const win = new BrowserWindow({
     width: 600,
-    height: 650,
-    resizable: false,
+    height: 700,
     webPreferences: {
-      preload: path.join(__dirname, 'renderer.js')
-    }
+      preload: path.join(__dirname, "renderer.js"), // connect to browser logic
+    },
   });
-  win.loadFile('index.html');
+
+  win.loadFile("index.html");
 }
 
-app.whenReady().then(createWindow);
+app.whenReady().then(() => {
+  createWindow();
+
+  app.on("activate", () => {
+    if (BrowserWindow.getAllWindows().length === 0) createWindow();
+  });
+});
+
+app.on("window-all-closed", () => {
+  if (process.platform !== "darwin") app.quit();
+});
